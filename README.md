@@ -1,4 +1,5 @@
 ## Shopify Backend Developer Intern Challenge
+### TASK: Build an inventory tracking web application for a logistics company.
 
 ## Run the application
 
