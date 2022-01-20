@@ -1,7 +1,7 @@
 ## Shopify Backend Developer Intern Challengee
 An inventory tracking web application for a logistics company.
 
-## System Pre-requisits:
+## System Pre-requisites:
 [Python 3.7+](https://www.python.org/) <br />
 [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
