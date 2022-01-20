@@ -1,1 +1,22 @@
 {% extends "layout.html" %}
+
+{% block main %}
+    {% if inventory is defined %}
+        {% for item in inventory %}
+        <li>Name: {{item.item_name}}</li>
+        <li>Description: {{item.item_description}}</li>
+        <li>Quantity: {{item.item_quantity}}</li>
+        <div class="buttons">
+            <button><a href="/delete/{{item.item_id}}">Delete</a>
+            <button><a href="/update/{{item.item_id}}">Edit</a></button>
+        </div>
+        </li>
+        {% endfor %}  
+    {% else %}
+        <h1>empty</h1>
+    
+    {% endif %}
+    <br /> <br />
+    <button><a href="export">Export to CSV</a></button>
+ 
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form method="POST" action="/update/{{update_item.item_id}}"> 
+    <div class="form-group">
+      <label for="name">Item Name</label>
+      <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Enter item name" value="{{update_item.item_name}}">
+    </div>
+    <div class="form-group">
+        <label for="description">Item Description</label>
+        <textarea class="form-control" id="item_description" name="item_description" rows="3" placeholder="Enter item description">{{update_item.item_description}}</textarea>
+    </div> <br />
+    <div class="form-group">
+        <label for="quantity">Enter Quantity</label>
+        <input type="number" id="item_quantity" name="item_quantity" min="1" value={{update_item.item_quantity}}>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
